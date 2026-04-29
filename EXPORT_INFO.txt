@@ -1,0 +1,9 @@
+CADU — Export HD
+Gerado em: 2026-04-28T11:43:18.182Z
+
+Conteúdo:
+- Código-fonte e configs do projeto
+- Assets em /public (SVG = alta definição / escalável)
+
+Excluídos:
+- node_modules, .next, .git, exports

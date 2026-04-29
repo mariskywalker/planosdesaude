@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+/* Altura mínima, sem height: 100% no body: com `flex flex-col` no body, altura
+   fixa à viewport faria as secções encolherem (flex-shrink) e cortar conteúdo. */
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
