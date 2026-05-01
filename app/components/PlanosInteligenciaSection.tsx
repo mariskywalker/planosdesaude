@@ -465,10 +465,11 @@ export function PlanosInteligenciaSection() {
                 </div>
               </div>
               <p className="mx-auto max-w-4xl text-lg leading-relaxed text-gray-600">
-              Em uma carteira simulada de 1.000 crianças, pequenas ineficiências clínicas e operacionais podem representar
-              mais de <strong className="font-semibold text-gray-900">R$ 12 milhões por ano</strong> em risco, desperdício ou
-              oportunidade de otimização.
-            </p>
+                Em uma carteira simulada de 1.000 crianças, pequenas ineficiências clínicas e operacionais podem representar
+                mais de{" "}
+                <strong className="font-semibold text-gray-900">R$ 12 milhões por ano</strong> em risco, desperdício ou oportunidade
+                de otimização.
+              </p>
             </div>
           </section>
         </div>
