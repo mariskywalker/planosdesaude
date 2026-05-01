@@ -9,3 +9,13 @@ html {
 body {
   min-height: 100%;
 }
+
+/* Recharts + Tailwind preflight: SVG com max-width:100%/height:auto pode esmagar o canvas do gráfico. */
+.recharts-wrapper {
+  overflow: visible;
+}
+svg.recharts-surface {
+  display: block;
+  overflow: visible;
+  max-width: none;
+}

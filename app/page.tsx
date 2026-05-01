@@ -1,4 +1,9 @@
 import { ScrollEffects } from "./components/ScrollEffects";
+import {
+  PlanosAgentesClinicosSection,
+  PlanosInteligenciaPilaresSection,
+} from "./components/PlanosInteligenciaNarrativaSections";
+import { PlanosInteligenciaSection } from "./components/PlanosInteligenciaSection";
 
 export default function Home() {
   return (
@@ -18,6 +23,15 @@ export default function Home() {
           </li>
           <li>
             <a href="#custos-risco">Custos e Risco</a>
+          </li>
+          <li>
+            <a href="#inteligencia-pilares">Capacidades</a>
+          </li>
+          <li>
+            <a href="#inteligencia-clinica">Indicadores</a>
+          </li>
+          <li>
+            <a href="#agentes-clinicos">Agentes</a>
           </li>
           <li>
             <a href="#solucao">Infraestrutura</a>
@@ -318,6 +332,12 @@ export default function Home() {
         </div>
       </section>
 
+      <PlanosInteligenciaPilaresSection />
+
+      <PlanosInteligenciaSection />
+
+      <PlanosAgentesClinicosSection />
+
       <section id="solucao">
         <div className="wrap">
           <div className="solucao-intro reveal">
@@ -424,7 +444,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="setor-grid" style={{ marginTop: "2.25rem" }}>
+          <div className="setor-grid setor-grid-execucao" style={{ marginTop: "2.25rem" }}>
             {[
               "piloto com rede selecionada",
               "integração progressiva com prestadores",
@@ -599,7 +619,7 @@ export default function Home() {
             <p className="eyebrow">Viabilidade</p>
             <h2 className="section-headline">Modelo de implementação</h2>
           </div>
-          <div className="valor-grid" style={{ marginTop: "2.25rem" }}>
+          <div className="valor-grid valor-grid-viabilidade" style={{ marginTop: "2.25rem" }}>
             {[
               "piloto inicial",
               "expansão por rede",

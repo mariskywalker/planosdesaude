@@ -1906,11 +1906,20 @@ footer {
 .dados-card:nth-child(4) { grid-column: 2 / span 2; }
 .dados-card:nth-child(5) { grid-column: 4 / span 2; }
 
+/* Secção Agentes (6 cartões): 6.º cartão centrado na 3.ª linha (grelha de 6 col.; cada cartão span 2) */
+.dados-grid-agentes .dados-card:nth-child(6) {
+  --card-accent: #8b7fd8;
+  grid-column: 3 / span 2;
+}
+
 @media (max-width: 1020px) {
   .dados-grid { grid-template-columns: repeat(2, 1fr); }
   .dados-card { grid-column: span 1; }
   .dados-card:nth-child(4),
   .dados-card:nth-child(5) { grid-column: span 1; }
+  .dados-grid-agentes .dados-card:nth-child(6) {
+    grid-column: span 1;
+  }
 }
 
 @media (max-width: 640px) {
@@ -1993,15 +2002,32 @@ footer {
 .setor-grid .setor-card:nth-child(5) { --card-accent: #E87DA0; }
 .setor-grid .setor-card:nth-child(6) { --card-accent: color-mix(in oklab, var(--red) 55%, var(--orange)); }
 
+/* Execução: 4 cartões em grelha de 3 colunas — último centrado na 2.ª linha */
+.setor-grid-execucao .setor-card:nth-child(4) {
+  grid-column: 2 / span 1;
+}
+
 .valor-grid .valor-card:nth-child(1) { --card-accent: var(--orange); }
 .valor-grid .valor-card:nth-child(2) { --card-accent: var(--red); }
 .valor-grid .valor-card:nth-child(3) { --card-accent: #7EB8F5; }
 .valor-grid .valor-card:nth-child(4) { --card-accent: var(--green); }
 .valor-grid .valor-card:nth-child(5) { --card-accent: #E87DA0; }
 .valor-grid .valor-card:nth-child(6) { --card-accent: color-mix(in oklab, var(--red) 55%, var(--orange)); }
+
+/* Viabilidade: 4 cartões em grelha de 3 colunas — último centrado na 2.ª linha */
+.valor-grid-viabilidade .valor-card:nth-child(4) {
+  grid-column: 2 / span 1;
+}
+
 @media (max-width: 900px) {
   .setor-grid,
   .valor-grid { grid-template-columns: repeat(2, 1fr); }
+  .setor-grid-execucao .setor-card:nth-child(4) {
+    grid-column: span 1;
+  }
+  .valor-grid-viabilidade .valor-card:nth-child(4) {
+    grid-column: span 1;
+  }
 }
 
 @media (max-width: 520px) {
