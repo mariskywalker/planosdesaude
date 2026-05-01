@@ -9,12 +9,13 @@ export function PlanosFraudeIntegridadeSection() {
           <h2 className="section-headline">O CADU não analisa apenas o pagamento</h2>
           <p className="section-body" style={{ marginTop: "1rem", maxWidth: "52rem" }}>
             Soluções antifraude olham sobretudo para <strong style={{ color: "var(--black)" }}>faturamento</strong>. O CADU olha para{" "}
-            <strong style={{ color: "var(--black)" }}>coerência clínica</strong>: execução do plano, evidência nas sessões e evolução real.
+            <strong style={{ color: "var(--black)" }}>coerência clínica</strong>: Execução do plano, evidência nas sessões e evolução real.
           </p>
 
           <p className="section-body" style={{ marginTop: "0.85rem", maxWidth: "52rem" }}>
-            <strong style={{ color: "var(--black)" }}>O problema não está apenas no faturamento.</strong> Está na ausência de leitura clínica sobre o cuidado —
-            quando não dá para sustentar decisão com evidência longitudinal.
+            <strong style={{ color: "var(--black)" }}>O problema não está apenas no faturamento.</strong> Está na ausência de leitura clínica sobre o cuidado.
+            <br />
+            Quando não dá para sustentar decisão com evidência longitudinal, o risco vira gestão às cegas.
           </p>
 
           <p
@@ -39,7 +40,7 @@ export function PlanosFraudeIntegridadeSection() {
               Hoje, a maioria das operadoras não consegue identificar se o cuidado que está pagando faz sentido clínico.
             </p>
             <p style={{ marginTop: "0.65rem", marginBottom: 0, color: "var(--black)", fontWeight: 800, lineHeight: 1.55 }}>
-              E, sem essa leitura, o custo cresce — mesmo quando o resultado não acompanha.
+              Sem essa leitura, o custo cresce — mesmo quando o resultado não acompanha.
             </p>
             <p style={{ marginTop: "0.85rem", marginBottom: 0, color: "var(--text-2)" }}>
               Operadoras pagam milhares de sessões sem conseguir responder três perguntas básicas:
@@ -71,7 +72,7 @@ export function PlanosFraudeIntegridadeSection() {
               <li>Redução de desperdício</li>
               <li>Rebalanceamento da rede credenciada</li>
               <li>Melhor alocação de suporte terapêutico</li>
-              <li>E milhões recuperados em eficiência</li>
+              <li>Milhões recuperados em eficiência</li>
             </ul>
           </div>
 

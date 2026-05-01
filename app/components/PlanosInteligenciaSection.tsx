@@ -243,18 +243,20 @@ export function PlanosInteligenciaSection() {
               <div className="space-y-3 text-sm text-gray-700">
                 <h3 className="mb-3 text-lg font-semibold text-gray-900">Dispersão custo × evolução</h3>
                 <p>
-                  <strong className="text-gray-900">Clínica A:</strong> custo médio {brl(2900)}, evolução média 78%.
+                  <strong className="text-gray-900">Clínica A:</strong> Custo médio {brl(2900)}, evolução média 78%.
                   <br />
-                  <strong className="text-gray-900">Clínica B:</strong> custo médio {brl(4700)}, evolução média 34%.
+                  <strong className="text-gray-900">Clínica B:</strong> Custo médio {brl(4700)}, evolução média 34%.
                 </p>
                 <ul className="space-y-3">
                   <li>
-                    <strong>Diferença de custo:</strong> {brl(1800)} por criança/mês (referência ilustrativa A vs. médias de
+                    <strong>Diferença de custo:</strong> {brl(1800)} por criança/mês (Referência ilustrativa A vs. médias de
                     rede)
                   </li>
                   <li>
                     Se 120 crianças estão em clínicas de baixa performance: 120 × {brl(1800)} ={" "}
-                    <span className="font-medium text-amber-600">{brl(216_000)}/mês</span> de oportunidade
+                    <span className="font-medium text-amber-600">{brl(216_000)}/mês</span>
+                    {" "}
+                    Como oportunidade mensal estimada.
                   </li>
                   <li>
                     <strong>Impacto anual:</strong> {brl(2_592_000)}/ano

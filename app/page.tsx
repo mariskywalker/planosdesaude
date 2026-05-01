@@ -128,25 +128,25 @@ export default function Home() {
                   <span className="stat-num">
                     2<sup>mi</sup>
                   </span>
-                  <span className="stat-label">alta frequência de terapias sem coordenação longitudinal</span>
+                  <span className="stat-label">Alta frequência de terapias sem coordenação longitudinal</span>
                 </div>
                 <div>
                   <span className="stat-num">
                     18<sup>m</sup>
                   </span>
-                  <span className="stat-label">baixa visibilidade sobre evolução clínica real</span>
+                  <span className="stat-label">Baixa visibilidade sobre evolução clínica real</span>
                 </div>
                 <div>
                   <span className="stat-num">
                     60<sup>%</sup>
                   </span>
-                  <span className="stat-label">custo elevado por paciente sem previsibilidade</span>
+                  <span className="stat-label">Custo elevado por paciente sem previsibilidade</span>
                 </div>
                 <div>
                   <span className="stat-num">
                     24<sup>h</sup>
                   </span>
-                  <span className="stat-label">risco constante de fraude e duplicidade de atendimento</span>
+                  <span className="stat-label">Risco constante de fraude e duplicidade de atendimento</span>
                 </div>
               </div>
             </div>
@@ -247,11 +247,11 @@ export default function Home() {
                 É um problema de <span className="problema-structural-accent">gestão e informação.</span>
               </p>
               <ul className="urgencia-list" style={{ marginTop: "1rem" }}>
-                <li>não acompanha a evolução real do paciente</li>
-                <li>não consegue validar efetividade do tratamento</li>
-                <li>não tem visibilidade sobre duplicidade de atendimentos</li>
-                <li>não identifica padrões de desperdício</li>
-                <li>reage tarde a desvios de custo</li>
+                <li>Falta de acompanhamento da evolução real do paciente</li>
+                <li>Impossibilidade de validar a efetividade do tratamento</li>
+                <li>Falta de visibilidade sobre duplicidade de atendimentos</li>
+                <li>Falha na identificação de padrões de desperdício</li>
+                <li>Reação tardia a desvios de custo</li>
               </ul>
             </div>
 
@@ -449,10 +449,10 @@ export default function Home() {
 
           <div className="setor-grid setor-grid-execucao" style={{ marginTop: "2.25rem" }}>
             {[
-              "piloto com rede selecionada",
-              "integração progressiva com prestadores",
-              "acompanhamento de pacientes ativos",
-              "geração de dados desde o início",
+              "Piloto com rede selecionada",
+              "Integração progressiva com prestadores",
+              "Acompanhamento de pacientes ativos",
+              "Geração de dados desde o início",
             ].map((t, i) => (
               <div key={t} className={`setor-card reveal${i > 0 ? ` d${Math.min(i, 4)}` : ""}`}>
                 {t}
@@ -476,9 +476,9 @@ export default function Home() {
 
           <div className="setor-grid" style={{ marginTop: "2.25rem" }}>
             {[
-              "uso de geolocalização para validação de atendimento",
-              "confirmação de presença por paciente/família",
-              "consistência entre agenda, execução e faturamento",
+              "Uso de geolocalização para validação de atendimento",
+              "Confirmação de presença por paciente/família",
+              "Consistência entre agenda, execução e faturamento",
             ].map((t, i) => (
               <div key={t} className={`setor-card reveal${i > 0 ? ` d${Math.min(i, 4)}` : ""}`}>
                 {t}
@@ -585,10 +585,10 @@ export default function Home() {
             <div>
               <ol className="piloto-ppp-steps">
                 {[
-                  ["visibilidade da jornada", "Leitura integrada do percurso do paciente em rede selecionada."],
-                  ["redução de duplicidade", "Identificação e redução de sobreposição de sessões e atendimentos."],
-                  ["melhoria na coordenação", "Alinhamento entre prestadores e operadora na execução do cuidado."],
-                  ["inconsistências detectadas", "Sinais e padrões anômalos para auditoria e intervenção precoce."],
+                  ["Visibilidade da jornada", "Leitura integrada do percurso do paciente em rede selecionada."],
+                  ["Redução de duplicidade", "Identificação e redução de sobreposição de sessões e atendimentos."],
+                  ["Melhoria na coordenação", "Alinhamento entre prestadores e operadora na execução do cuidado."],
+                  ["Inconsistências detectadas", "Sinais e padrões anômalos para auditoria e intervenção precoce."],
                 ].map(([title, desc], idx) => (
                   <li key={title} className={`reveal${idx > 0 ? ` d${Math.min(idx, 3)}` : ""}`}>
                     <span className="piloto-ppp-n">{idx + 1}</span>
@@ -604,12 +604,12 @@ export default function Home() {
             <div className="pilot-indicators reveal d2">
               <p className="pilot-indicators-title">Indicadores</p>
               <ul className="pilot-indicators-list">
-                <li>custo por paciente</li>
-                <li>frequência de sessões</li>
-                <li>redução de redundância</li>
-                <li>aderência ao plano terapêutico</li>
-                <li>evolução clínica</li>
-                <li>eventos inconsistentes detectados</li>
+                <li>Custo por paciente</li>
+                <li>Frequência de sessões</li>
+                <li>Redução de redundância</li>
+                <li>Aderência ao plano terapêutico</li>
+                <li>Evolução clínica</li>
+                <li>Eventos inconsistentes detectados</li>
               </ul>
             </div>
           </div>
@@ -624,10 +624,10 @@ export default function Home() {
           </div>
           <div className="valor-grid valor-grid-viabilidade" style={{ marginTop: "2.25rem" }}>
             {[
-              "piloto inicial",
-              "expansão por rede",
-              "contratação baseada em resultado",
-              "modelo SaaS para operadora",
+              "Piloto inicial",
+              "Expansão por rede",
+              "Contratação baseada em resultado",
+              "Modelo SaaS para operadora",
             ].map((t, i) => (
               <div key={t} className={`valor-card reveal${i > 0 ? ` d${Math.min(i, 3)}` : ""}`}>
                 {t}

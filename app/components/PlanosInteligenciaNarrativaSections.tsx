@@ -28,7 +28,7 @@ const agentes = [
   },
   {
     title: "Agente de Rastreabilidade",
-    body: "Verifica se cada sessão tem evidência mínima: objetivo, intervenção, resposta e próximo passo.",
+    body: "Verifica se cada sessão tem evidência mínima: Objetivo, intervenção, resposta e próximo passo.",
   },
   {
     title: "Agente de Padrão de Rede",
