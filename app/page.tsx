@@ -304,16 +304,18 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-24">
+      <section className="py-24 text-center">
         <div className="mx-auto max-w-5xl px-6">
           <div className="space-y-4 rounded-2xl bg-gray-50 p-10 text-center">
             <p className="text-xs uppercase tracking-wide text-gray-400">O problema real</p>
 
-            <h2 className="text-xl font-medium text-gray-900 md:text-2xl">
+            <h2 className="mx-auto max-w-4xl !text-center text-xl font-medium text-gray-900 md:text-2xl">
               A maior parte do desperdício em terapias de neurodesenvolvimento não vem de fraude explícita.
             </h2>
 
-            <p className="text-base text-gray-500">Vem de decisões clínicas sem visibilidade.</p>
+            <p className="mx-auto max-w-3xl !text-center text-base text-gray-500">
+              Vem de decisões clínicas sem visibilidade.
+            </p>
           </div>
         </div>
       </section>
