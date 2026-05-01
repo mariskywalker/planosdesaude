@@ -4,6 +4,7 @@ import {
   PlanosInteligenciaPilaresSection,
 } from "./components/PlanosInteligenciaNarrativaSections";
 import { PlanosInteligenciaSection } from "./components/PlanosInteligenciaSection";
+import { PlanosFraudeIntegridadeSection } from "./components/PlanosFraudeIntegridadeSection";
 
 export default function Home() {
   return (
@@ -335,6 +336,8 @@ export default function Home() {
       <PlanosInteligenciaPilaresSection />
 
       <PlanosInteligenciaSection />
+
+      <PlanosFraudeIntegridadeSection />
 
       <PlanosAgentesClinicosSection />
 
