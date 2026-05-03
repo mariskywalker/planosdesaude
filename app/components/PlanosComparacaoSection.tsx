@@ -43,6 +43,24 @@ export function PlanosComparacaoSection() {
           <p className="dados-hint" style={{ maxWidth: "44rem" }}>
             Mesmo critério, três formas diferentes de enxergar risco e oportunidade na rede.
           </p>
+          <p
+            className="reveal"
+            style={{
+              marginTop: "1rem",
+              maxWidth: "44rem",
+              fontSize: "1rem",
+              lineHeight: 1.65,
+              fontWeight: 700,
+              color: "var(--black)",
+              padding: "1rem 1.15rem",
+              borderRadius: 14,
+              border: "1px solid color-mix(in oklab, var(--border) 90%, var(--black))",
+              background: "var(--white)",
+              boxShadow: "var(--shadow-sm)",
+            }}
+          >
+            A Arvo audita contas depois que você pagou. O CADU confirma antes — com GPS, evolução e ranking de clínicas.
+          </p>
         </div>
 
         <div className="reveal d1" style={{ marginTop: "2rem", overflowX: "auto" }}>

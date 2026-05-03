@@ -3,6 +3,7 @@ import {
   PlanosInteligenciaPilaresSection,
   PlanosOQueEnxergarSection,
 } from "./components/PlanosInteligenciaNarrativaSections";
+import { PlanosComparacaoSection } from "./components/PlanosComparacaoSection";
 import { PlanosInteligenciaSection } from "./components/PlanosInteligenciaSection";
 
 export default function Home() {
@@ -167,6 +168,20 @@ export default function Home() {
                   <span className="stat-label">Risco constante de fraude e duplicidade de atendimento</span>
                 </div>
               </div>
+
+              <p
+                className="reveal"
+                style={{
+                  marginTop: "1.25rem",
+                  maxWidth: "42rem",
+                  fontSize: "0.8125rem",
+                  lineHeight: 1.55,
+                  color: "var(--text-3)",
+                  fontStyle: "italic",
+                }}
+              >
+                Baseado em dados reais da nossa clínica + benchmarks de mercado.
+              </p>
             </div>
 
           </div>
@@ -351,9 +366,32 @@ export default function Home() {
         </div>
       </section>
 
+      <section id="por-que-agora" className="section-setor">
+        <div className="wrap">
+          <div className="reveal">
+            <p className="eyebrow">Por que agora</p>
+          </div>
+
+          <div className="setor-grid" style={{ marginTop: "2.25rem" }}>
+            {[
+              "Diagnósticos de TEA +15–20%/ano",
+              "R$ 2B+ em judicialização",
+              "Open Health chegando",
+              "Custo per capita TEA = 3–5× maior",
+            ].map((t, i) => (
+              <div key={t} className={`setor-card reveal${i > 0 ? ` d${Math.min(i, 4)}` : ""}`}>
+                {t}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <PlanosInteligenciaPilaresSection />
 
       <PlanosInteligenciaSection />
+
+      <PlanosComparacaoSection />
 
       <section id="fraude-controle" className="section-arch">
         <div className="wrap">
