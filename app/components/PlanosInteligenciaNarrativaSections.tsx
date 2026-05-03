@@ -15,7 +15,7 @@ const pilares = [
 
 const oQueEnxerga = [
   {
-    title: "Pertinência da carga terapêutica",
+    title: "Pertinência clínica",
     body: "Ver se intensidade e mix fazem sentido para o perfil, suporte disponível e evolução observada.",
   },
   {
@@ -33,6 +33,10 @@ const oQueEnxerga = [
   {
     title: "Padrão entre clínicas",
     body: "Comparar pares parecidos para achar outliers de custo, frequência e resultado.",
+  },
+  {
+    title: "Alta, manutenção ou intensificação",
+    body: "Sinais de evolução sustentável, estagnação prolongada ou necessidade de mais suporte.",
   },
 ] as const;
 
@@ -59,10 +63,10 @@ export function PlanosInteligenciaPilaresSection() {
 
 export function PlanosOQueEnxergarSection() {
   return (
-    <section id="o-que-enxergar" className="section-dados">
+    <section id="agentes-clinicos" className="section-dados">
       <div className="wrap">
         <div className="dados-head reveal">
-          <p className="eyebrow">Visibilidade</p>
+          <p className="eyebrow">Agentes clínicos</p>
           <h2 className="section-headline">O que você passa a enxergar</h2>
         </div>
         <div className="dados-grid dados-grid-agentes">

@@ -18,7 +18,7 @@ const dmMono = DM_Mono({
 export const metadata: Metadata = {
   title: "CADU Planos de Saúde",
   description:
-    "Infraestrutura de dados e coordenação do cuidado em autismo e neurodesenvolvimento: texto de referência para diálogo com operadoras, redes credenciadas e gestão assistencial.",
+    "Plataforma de dados e sistema de coordenação do cuidado em autismo e neurodesenvolvimento para operadoras de saúde suplementar: visibilidade clínica, auditoria e eficiência na rede.",
 };
 
 export default function RootLayout({

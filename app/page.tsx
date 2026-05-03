@@ -4,12 +4,6 @@ import {
   PlanosOQueEnxergarSection,
 } from "./components/PlanosInteligenciaNarrativaSections";
 import { PlanosInteligenciaSection } from "./components/PlanosInteligenciaSection";
-import { PlanosTracaoSection } from "./components/PlanosTracaoSection";
-import { PlanosAntifraudeTempoRealSection } from "./components/PlanosAntifraudeTempoRealSection";
-import { PlanosPorQueAgoraSection } from "./components/PlanosPorQueAgoraSection";
-import { PlanosRankingClinicasSection } from "./components/PlanosRankingClinicasSection";
-import { PlanosCasoRealSection } from "./components/PlanosCasoRealSection";
-import { PlanosComparacaoSection } from "./components/PlanosComparacaoSection";
 
 export default function Home() {
   return (
@@ -28,25 +22,28 @@ export default function Home() {
             <a href="#problema">O problema</a>
           </li>
           <li>
-            <a href="#tracao">Tração</a>
-          </li>
-          <li>
             <a href="#custos-risco">Custos e risco</a>
           </li>
           <li>
             <a href="#inteligencia-pilares">Capacidades</a>
           </li>
           <li>
-            <a href="#antifraude-tempo-real">Antifraude</a>
-          </li>
-          <li>
             <a href="#inteligencia-clinica">Indicadores</a>
           </li>
           <li>
-            <a href="#o-que-enxergar">O que você vê</a>
+            <a href="#fraude-controle">Fraude e controle</a>
           </li>
           <li>
-            <a href="#solucao">Como funciona</a>
+            <a href="#solucao">Camada CADU</a>
+          </li>
+          <li>
+            <a href="#agentes-clinicos">Agentes clínicos</a>
+          </li>
+          <li>
+            <a href="#execucao">Execução</a>
+          </li>
+          <li>
+            <a href="#governanca-lgpd">Governança</a>
           </li>
           <li>
             <a href="#piloto">Piloto</a>
@@ -54,7 +51,7 @@ export default function Home() {
         </ul>
 
         <a href="#proximo" className="nav-cta">
-          Piloto
+          Contato
           <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2.5">
             <path d="M3 8h10M9 4l4 4-4 4" />
           </svg>
@@ -91,38 +88,58 @@ export default function Home() {
               </div>
 
               <h1 className="hero-headline reveal d1">
-                Ver o cuidado em neurodesenvolvimento
+                O custo não está no tratamento.
                 <br />
-                para reduzir custo — com dados
+                Está na falta de visibilidade.
               </h1>
 
-              <p className="hero-body reveal d2">
-                O custo não está só no tratamento.
-                <br />
-                Está na falta de visibilidade sobre o que a rede realmente faz.
+              <p className="hero-body reveal d2" style={{ marginTop: "1rem", maxWidth: "42rem" }}>
+                CADU é a infraestrutura de dados e coordenação do cuidado em neurodesenvolvimento para operadoras de saúde
+                suplementar.
               </p>
 
-              <p className="hero-body reveal d2" style={{ marginTop: "1rem" }}>
-                Operadoras pagam jornadas fragmentadas entre prestadores. Sem leitura longitudinal, desperdício e fraude
-                aparecem tarde — ou nunca.
-              </p>
-
-              <p className="hero-body reveal d2" style={{ marginTop: "1rem" }}>
-                O CADU é uma camada sobre a operação existente: você identifica aderência, evolução, outliers de custo e
-                inconsistências antes do pagamento escalar.
-              </p>
-
-              <div className="hero-btns reveal d3">
+              <div className="hero-btns reveal d3" style={{ flexWrap: "wrap", rowGap: "8px" }}>
                 <a
-                  href="mailto:contato@cadu.health?subject=Quero%20iniciar%20piloto%20-%2090%20dias%20-%20CADU"
+                  href="mailto:contato@cadu.health?subject=Piloto%20CADU%20-%20operadora%20parceira"
                   className="btn-red"
                 >
-                  Quero iniciar piloto
+                  Iniciar piloto com minha operadora
                   <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2.5">
                     <path d="M3 8h10M9 4l4 4-4 4" />
                   </svg>
                 </a>
+                <a
+                  href="mailto:contato@cadu.health?subject=Proposta%20t%C3%A9cnica%20CADU"
+                  className="btn-ghost"
+                >
+                  Ver proposta técnica
+                </a>
+                <a
+                  href="mailto:contato@cadu.health?subject=Contato%20-%20CADU%20Sa%C3%BAde%20Suplementar"
+                  style={{
+                    fontSize: "0.875rem",
+                    fontWeight: 500,
+                    color: "var(--text-2)",
+                    textDecoration: "underline",
+                    textUnderlineOffset: "3px",
+                  }}
+                >
+                  Falar com a equipe
+                </a>
               </div>
+
+              <p
+                className="reveal d3"
+                style={{
+                  marginTop: "1.25rem",
+                  maxWidth: "40rem",
+                  fontSize: "0.8125rem",
+                  lineHeight: 1.55,
+                  color: "var(--text-2)",
+                }}
+              >
+                Desenvolvido a partir da Clínica Casa do Urso — ambiente clínico real com dados estruturados desde 2023.
+              </p>
 
               <div className="hero-stats reveal d4">
                 <div>
@@ -305,8 +322,6 @@ export default function Home() {
         </div>
       </section>
 
-      <PlanosTracaoSection />
-
       <section id="custos-risco" className="section-setor">
         <div className="wrap">
           <div className="reveal">
@@ -338,19 +353,41 @@ export default function Home() {
 
       <PlanosInteligenciaPilaresSection />
 
-      <PlanosAntifraudeTempoRealSection />
-
-      <PlanosPorQueAgoraSection />
-
       <PlanosInteligenciaSection />
 
-      <PlanosRankingClinicasSection />
+      <section id="fraude-controle" className="section-arch">
+        <div className="wrap">
+          <div className="reveal">
+            <p className="eyebrow">Fraude e controle</p>
+            <h2 className="section-headline">Visibilidade reduz fraude.</h2>
+            <p className="section-body" style={{ marginTop: "1rem", maxWidth: "46rem" }}>
+              A ausência de dados integrados abre espaço para inconsistências e fraude assistencial. O CADU permite validação
+              de presença e atendimento, registro estruturado de sessões, cruzamento de dados entre prestadores,
+              identificação de padrões anômalos e rastreabilidade da jornada do paciente.
+            </p>
+          </div>
 
-      <PlanosOQueEnxergarSection />
+          <div className="setor-grid" style={{ marginTop: "2.25rem" }}>
+            {[
+              "Uso de geolocalização para validação de atendimento",
+              "Confirmação de presença por paciente/família",
+              "Consistência entre agenda, execução e faturamento",
+            ].map((t, i) => (
+              <div key={t} className={`setor-card reveal${i > 0 ? ` d${Math.min(i, 4)}` : ""}`}>
+                {t}
+              </div>
+            ))}
+          </div>
 
-      <PlanosCasoRealSection />
-
-      <PlanosComparacaoSection />
+          <div className="valor-grid" style={{ marginTop: "1.1rem" }}>
+            {["Menos fraude", "Menos desperdício", "Mais controle"].map((t, i) => (
+              <div key={t} className={`valor-card reveal${i > 0 ? ` d${Math.min(i, 3)}` : ""}`}>
+                {t}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <section id="solucao">
         <div className="wrap">
@@ -363,7 +400,7 @@ export default function Home() {
             <p className="section-body solucao-vacuo">
               O CADU não substitui sistemas da operadora nem dos prestadores.
             </p>
-            <p className="eyebrow">Camada de dados sobre o cuidado</p>
+            <p className="eyebrow">Infraestrutura de dados e coordenação do cuidado</p>
             <h2 className="section-headline">O CADU permite</h2>
             <p className="section-body">
               Registro longitudinal por paciente, troca de informação entre prestadores, leitura de evolução clínica e
@@ -440,6 +477,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <PlanosOQueEnxergarSection />
 
       <section id="execucao" className="section-setor">
         <div className="wrap">
@@ -537,6 +576,26 @@ export default function Home() {
               <h3 className="dados-card-title">Dados administrativos e faturamento</h3>
               <p className="dados-card-body">Autorização, cobrança, regras, auditoria, inconsistências e rastreabilidade.</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="governanca-lgpd" className="section-arch">
+        <div className="wrap">
+          <div className="reveal" style={{ maxWidth: "48rem" }}>
+            <p className="eyebrow">Governança e conformidade</p>
+            <h2 className="section-headline">Governança de dados e conformidade</h2>
+            <p className="section-body" style={{ marginTop: "1rem" }}>
+              O CADU opera em conformidade com a LGPD e as diretrizes do CFM e CFP para dados clínicos sensíveis.
+            </p>
+            <p className="section-body" style={{ marginTop: "1rem" }}>
+              Dados de pacientes são anonimizados e agregados para fins de gestão e auditoria. O acesso é controlado por
+              perfil com trilha de auditoria. Consentimento é coletado e registrado na entrada do paciente na plataforma.
+              Nenhum dado identificável é compartilhado com a operadora sem base legal e consentimento explícito.
+            </p>
+            <p className="section-body" style={{ marginTop: "1rem", marginBottom: 0 }}>
+              A governança é estruturada para suportar auditorias da ANS e processos internos de compliance.
+            </p>
           </div>
         </div>
       </section>
@@ -640,7 +699,7 @@ export default function Home() {
         </div>
 
         <div className="wrap" style={{ textAlign: "center" }}>
-          <p className="cta-eyebrow reveal">Próximo passo</p>
+          <p className="cta-eyebrow reveal">Contato</p>
 
           <h2 className="cta-headline reveal d1">
             Piloto de 90 dias
@@ -653,13 +712,22 @@ export default function Home() {
 
           <div className="cta-btns reveal d3" style={{ flexWrap: "wrap", justifyContent: "center" }}>
             <a
-              href="mailto:contato@cadu.health?subject=Quero%20iniciar%20piloto%20-%2090%20dias%20-%20CADU"
+              href="mailto:contato@cadu.health?subject=Piloto%20CADU%20-%20operadora%20parceira"
               className="btn-white"
             >
-              Quero iniciar piloto
+              Iniciar piloto com minha operadora
               <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2.5">
                 <path d="M3 8h10M9 4l4 4-4 4" />
               </svg>
+            </a>
+            <a href="mailto:contato@cadu.health?subject=Proposta%20t%C3%A9cnica%20CADU" className="btn-outline">
+              Ver proposta técnica
+            </a>
+            <a
+              href="mailto:contato@cadu.health?subject=Contato%20-%20CADU%20Sa%C3%BAde%20Suplementar"
+              className="btn-outline"
+            >
+              Falar com a equipe
             </a>
           </div>
         </div>
