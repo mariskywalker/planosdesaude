@@ -13,30 +13,26 @@ const pilares = [
   },
 ] as const;
 
-const agentes = [
+const oQueEnxerga = [
   {
-    title: "Agente de Pertinência Clínica",
-    body: "Avalia se a carga terapêutica faz sentido para o perfil, suporte e evolução da criança.",
+    title: "Pertinência da carga terapêutica",
+    body: "Ver se intensidade e mix fazem sentido para o perfil, suporte disponível e evolução observada.",
   },
   {
-    title: "Agente de Aderência ao Plano",
-    body: "Compara plano prescrito vs. execução real.",
+    title: "Aderência ao plano",
+    body: "Comparar o prescrito com o que foi executado, sessão a sessão.",
   },
   {
-    title: "Agente de Evolução Incompatível",
-    body: "Detecta casos com alto volume de sessões e baixa evolução.",
+    title: "Evolução incompatível com volume",
+    body: "Identificar muitas sessões com pouca progressão mensurável.",
   },
   {
-    title: "Agente de Rastreabilidade",
-    body: "Verifica se cada sessão tem evidência mínima: Objetivo, intervenção, resposta e próximo passo.",
+    title: "Rastreabilidade mínima por sessão",
+    body: "Objetivo, intervenção, resposta e próximo passo registrados de forma estruturada.",
   },
   {
-    title: "Agente de Padrão de Rede",
-    body: "Compara clínicas semelhantes para identificar outliers de custo, frequência e resultado.",
-  },
-  {
-    title: "Agente de Alta ou Ajuste de Suporte",
-    body: "Sinaliza crianças com evolução sustentada, estagnação ou necessidade de intensificação.",
+    title: "Padrão entre clínicas",
+    body: "Comparar pares parecidos para achar outliers de custo, frequência e resultado.",
   },
 ] as const;
 
@@ -61,16 +57,16 @@ export function PlanosInteligenciaPilaresSection() {
   );
 }
 
-export function PlanosAgentesClinicosSection() {
+export function PlanosOQueEnxergarSection() {
   return (
-    <section id="agentes-clinicos" className="section-dados">
+    <section id="o-que-enxergar" className="section-dados">
       <div className="wrap">
         <div className="dados-head reveal">
-          <p className="eyebrow">Automação assistida</p>
-          <h2 className="section-headline">Agentes clínicos</h2>
+          <p className="eyebrow">Visibilidade</p>
+          <h2 className="section-headline">O que você passa a enxergar</h2>
         </div>
         <div className="dados-grid dados-grid-agentes">
-          {agentes.map((a, i) => (
+          {oQueEnxerga.map((a, i) => (
             <div key={a.title} className={`dados-card reveal${i > 0 ? ` d${Math.min(i, 4)}` : ""}`}>
               <h3 className="dados-card-title">{a.title}</h3>
               <p className="dados-card-body">{a.body}</p>

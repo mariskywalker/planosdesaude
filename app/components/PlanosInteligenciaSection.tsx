@@ -115,10 +115,10 @@ export function PlanosInteligenciaSection() {
       <div className="wrap">
         <header className="reveal mb-12 max-w-[48rem]">
           <p className="eyebrow text-[var(--red)]">Inteligência clínica</p>
-          <h2 className="section-headline mt-2">Indicadores em uma carteira simulada</h2>
+          <h2 className="section-headline mt-2">Indicadores em estimativa operacional</h2>
           <p className="section-body mt-4 text-[var(--text-2)]">
-            Visualizações ilustrativas a partir dos pressupostos abaixo — úteis para ancorar conversas sobre risco,
-            oportunidade e priorização com a operadora.
+            Estimativa baseada em dados reais de operação + benchmarks de mercado. Visualizações ilustrativas a partir dos
+            pressupostos abaixo — úteis para ancorar conversas sobre risco, oportunidade e priorização com a operadora.
           </p>
         </header>
 
@@ -467,8 +467,8 @@ export function PlanosInteligenciaSection() {
                 </div>
               </div>
               <p className="mx-auto max-w-4xl text-lg leading-relaxed text-gray-600">
-                Em uma carteira simulada de 1.000 crianças, pequenas ineficiências clínicas e operacionais podem representar
-                mais de{" "}
+                Em uma estimativa para 1.000 crianças (dados reais de operação + benchmarks de mercado), pequenas ineficiências
+                clínicas e operacionais podem representar mais de{" "}
                 <strong className="font-semibold text-gray-900">R$ 12 milhões por ano</strong> em risco, desperdício ou oportunidade
                 de otimização.
               </p>
